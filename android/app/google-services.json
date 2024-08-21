@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "353384484265",
+    "project_id": "fir-app-c163f",
+    "storage_bucket": "fir-app-c163f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353384484265:android:e85437c5c701dfa5a9c8b8",
+        "android_client_info": {
+          "package_name": "com.example.firebase_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzvbMZh4_rpK6GdeZxc7c6mZzrpDR-qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353384484265:android:37913767e55f873aa9c8b8",
+        "android_client_info": {
+          "package_name": "com.example.firebase_live_score_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzvbMZh4_rpK6GdeZxc7c6mZzrpDR-qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
