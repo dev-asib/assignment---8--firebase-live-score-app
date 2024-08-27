@@ -17,12 +17,6 @@ class _LiveScoreScreenState extends State<LiveScoreScreen> {
   List<LiveScoreData> matchList = [];
 
   @override
-  void initState() {
-    super.initState();
-    _getFootballMatches();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
@@ -75,25 +69,6 @@ class _LiveScoreScreenState extends State<LiveScoreScreen> {
         },
       ),
     );
-  }
-
-  Future<void> _getFootballMatches() async {
-    matchList.clear();
-    final QuerySnapshot result =
-    await firebaseFireStore.collection('football').get();
-
-    for (QueryDocumentSnapshot doc in result.docs) {
-      matchList.add(
-        LiveScoreData(
-          matchName: doc.id,
-          team1Name: doc.get('team1Name'),
-          team2Name: doc.get('team2Name'),
-          team1Score: doc.get('team1'),
-          team2Score: doc.get('team2'),
-        ),
-      );
-    }
-    setState(() {});
   }
 
 }
